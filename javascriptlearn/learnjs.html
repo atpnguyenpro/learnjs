@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br>
+    cấu trúc điều khiển 
+    cấu trúc lựa chọn 
+    1 lệnh lựa chọn kép :
+    cú pháp 
+    if (điều kiện) {
+        // thực hiện
+    }
+    else {
+        // thực hiện
+    }
+    ví dụ: 
+    var x = prompt("hay nhao vao so be hon 100");
+    if (x>30){
+        alert("ban vua nhap gia tri la: "+x+ " gia tri lon hon 30)
+    }
+    else {
+        alert("ban vua nhap gia tri +x");
+    }
+
+
+
+    2 lệnh  đa lựa chọn :
+    lệnh switch case có thể dùng thay thế cho if else khi so sánh biểu thức với nhiều giá trị khác
+     cú pháp 
+
+             switch (bieu thuc){
+                 case giatri 1: 
+                 // thực hiện
+                 break;
+                case giatri 2:
+                // thực hiện
+                break;
+                default 
+                // thực hiện
+             }
+
+             ví dụ 
+             var diem = prompt (" hay nhap diem:'")
+             switch (diem){
+                 case "A":
+                            alert("tuyet voi");
+                            break;
+                case "B":
+                case "C":
+                            alert("kha");
+                            break;
+                case "B":
+                case "B":
+                case "B":
+                            alert("ban can co gang hon");
+                            break;
+
+                default:
+                        alert("gia tri ban nhap khong hop le");
+             }
+
+
+
+
+
+
+
+    cấu trúc lặp 
+    lặp không biết trước số lần :
+    while 
+    do ... while
+
+    cú pháp 
+    do {
+        // thực hiện 
+    } while (điêu kien)
+
+    ví dụ 
+
+    var dem = 0;
+    do {
+        document.write(" dem den " + dem + "</br>");
+        dem++
+    }
+    while (dem < 10);
+
+    lặp biết trước số lần: 
+
+    for  
+
+    cú pháp 
+     for (khoitao; dieukien; buoctang){
+         // thực hiện 
+     }
+     ví dụ 
+     for (var x = 0; x <br 10; x++){
+           document.write(x +"</br>");
+
+     }
+
+    // lệnh lặp dùng duyệt qua tập hợp , thuộc tính đối tượng
+    for ... of duyệt các đối tượng danh sách liệt kê gồm chuỗi, mảng, hàm 
+
+    for ... in duyệt các thuộc tính liệt kê đối tượng đánh khóa chuỗi bao gồm các thuộc tính liệt kê được kế thừa
+    hàm
+    phạm vi biến
+    mảng
+    var convat = new Array ("meo","ho","voi");
+    for (var i = 0; i <br convat.length; i++){
+         document.write(convat[i] + "</br>");
+    }
+
+    vòng lặp for ... of dùng duyệt qua đối tượng tập hợp 
+    chuỗi, array, các đối tượng giống mảng 
+    cú pháp 
+    for (variable of interable ){
+           statement
+    }
+    duyệt mảng với còng lặp for ... of 
+    1 const array1 = ['a' , 'b','c'];
+    for (const element of array1){
+           console.log(element);
+    }
+
+
+
+    xử lú sự kiện
+
+     hàm để thực hiện chức năng cụ thể
+     cú pháp 
+     hàm không trả về giá trị (giống sub)
+     function tenham (thamso1 , thamso2, thamson...){
+         // thực hiện 
+     }
+     hàm trả giá trị (giống function)
+     function tenham(thamso1, thamso2 ....){
+          // thực hiện
+          return gia tri tra ve;
+     }
+     ví dụ 
+     function myfunction (loichao 1, loichao2 ){
+         alert("bien thu nhat la: " + loi chao 1);
+        alert("bien thu hai la: " + loi chao 2);
+     }
+
+     hàm confirm
+
+     là hộp thoại để nhân hồi đáp 
+     lời gọi hàm: confirm(thông điệp )
+     hàm trả về hồi đáp của người dùng 
+     1 trả về true nếu người dùng nhân ok 
+     2 hàm trả về flase nếu người dùng nhấn cancel 
+     
+     phương thức 
+     settiemout // thực hiện công việc sau khoảng time trong tương lai
+     cleartimeout // hủy bỏ set out trước đó
+     setlnterval // thực hiện công việc lặp lại sau khoảng thời gian 
+     clearinterval hủy bỏ setinterval trước đó 
+     cú pháp 
+     var t = settimeout ("lenh javascript. so mil_giay")
+     lenh javascript: mã thực thi 
+     mili_giay: sau thời gian này mã thực hiện 
+     settimeout: trả về giá trị luu trong biến t 
+     
+
+
+
+
+
+
+
+</body>
+</html>
